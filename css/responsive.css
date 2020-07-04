@@ -1,0 +1,55 @@
+@media(max-width: 991px){
+    .mb_30{
+        margin-bottom: 30px;
+    }
+    .mt_30{
+        margin-top: 30px;
+    }
+}
+@media(max-width: 768px){
+    .mb_30{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 576px){
+    .topHeader .welcome{
+       text-align: center;
+    }
+    .topHeader .social-top ul{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .topHeader ul li {
+        margin-left: 17px;
+    }
+    .main-menu .nav-item{
+        margin-left: 0;
+    }
+    .slider-content{
+        text-align: center;
+    }
+    .slider-content h2{
+        font-size: 25px;
+    }
+    .slider-content h1{
+        font-size: 30px;
+    }
+    .slider-overlay{
+        padding: 50px 0px;
+    }
+    .abp-2{
+        display: none;
+    }
+    .about-content p{
+        text-align: center;
+    }
+    .sr-mtb{
+        margin: 70px 0px;
+    }
+
+}

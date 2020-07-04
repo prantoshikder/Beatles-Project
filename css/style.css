@@ -1,0 +1,582 @@
+/*==============
+    Fonts
+============== */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,500,600,700&display=swap');
+
+/* Common CSS */
+:root {
+    --primary-color: #0872b9;
+    --secondary-color: #353535;
+    --hover-color: #5bc5f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'oswald', sans-serif;
+    font-family: 'open Sans', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+img,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'oswald', sans-serif;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+
+.section-header h2 {
+    font-size: 24px;
+}
+
+.section-header img {
+    margin-left: -35px;
+    margin-top: -23px;
+}
+
+.services-part .section-header img {
+    margin-left: -74px;
+    margin-top: -23px;
+}
+
+.portfolio-part .section-header img {
+    margin-left: -86px;
+    margin-top: -23px;
+}
+
+.testimonial-part .section-header img {
+    margin-left: -60px;
+    margin-top: -23px;
+}
+
+/* Common CSS */
+
+/* Start of Header CSS */
+/* Start of Top Header */
+.topHeader {
+    background: var(--primary-color);
+    padding: 10px 0;
+}
+
+.topHeader span {
+    font-size: 14px;
+}
+  .topHeader .social-top ul{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: flex-end;
+    }
+.topHeader ul li {
+    margin-left: 25px;
+    color: #fff;
+}
+
+.topHeader ul li a {
+    color: #fff;
+    font-size: 14px;
+    transition: all linear .3s;
+}
+
+.topHeader ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* End of Top Header */
+/* Start of Main Menu */
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.main-menu {
+    padding: 20px 0;
+    background: #fff;
+}
+
+.main-menu .nav-item {
+    margin-left: 15px;
+}
+
+.main-menu .nav-item .nav-link {
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+.main-menu .nav-item .nav-link:focus,
+.main-menu .nav-item.active .nav-link,
+.main-menu .nav-item .nav-link:active {
+    color: var(--primary-color);
+}
+
+/* End of Main Menu */
+/* End of Header CSS */
+
+/* Start of Slider CSS */
+.slider-part {
+    background: url(../images/banner.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.slider-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 88px 0;
+}
+
+.slider-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.slider-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+
+.slider-content p {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 19px;
+}
+
+.slider-btn a {
+    font-size: 14px;
+    font-family: 'oswald', sans-serif;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    transition: all linear 0.3s;
+}
+
+.slider-btn a:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* End of Slider CSS */
+
+/* Start of About CSS */
+.about-part .img-bg {
+    background: #5bc5f4;
+    -webkit-clip-path: polygon(0 0, 69% 0, 88% 100%, 0% 100%);
+    clip-path: polygon(0 0, 69% 0, 88% 100%, 0% 100%);
+}
+
+.about-part .about-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-part p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+/* End of About CSS */
+
+/* Start of Services CSS */
+.services-part .service-item {
+    transition: all linear .3s;
+}
+
+.service-item .service-icon {
+    height: 85px;
+    width: 85px;
+    background: #f1f1f1;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+}
+
+.service-item .service-icon-2 {
+    height: 70px;
+    width: 70px;
+    background: #f1f1f1;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 2px auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+
+.service-item .service-con {
+    padding: 50px 22px 20px;
+    background: #f1f1f1;
+}
+
+.service-item:hover .service-icon,
+.service-item:hover .service-icon-2 {
+    background: #5bc5f4;
+}
+
+.service-item:hover {
+    box-shadow: 0px 0px 12px -5px #555555;
+    cursor: pointer;
+}
+
+.service-con h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.service-con p {
+    font-size: 13px;
+    word-spacing: 5px;
+}
+
+/* End of Services CSS */
+
+/* Start of Portfolio CSS */
+.portfolio-content img {
+    width: 100%;
+}
+
+.port-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.port-img .port-img-overlay a {
+    height: 40px;
+    width: 40px;
+    background: var(--hover-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.port-img .port-img-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all linear 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.port-img:hover .port-img-overlay {
+    left: 0;
+    opacity: 1;
+}
+
+/* End of Portfolio CSS */
+
+/* Start of Team CSS */
+.team-content-item img {
+    width: 100%;
+}
+
+.team-img {
+    position: relative;
+    overflow: hidden;
+    transition: all linear 0.3s
+}
+
+.team-img-overlay {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: -12%;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.team-content-item:hover .team-img {
+    box-shadow: 1px 1px 10px -3px #000;
+    -webkit-box-shadow: 1px 1px 10px -3px #000;
+    -moz-box-shadow: 1px 1px 10px -3px #000;
+}
+
+.team-content-item:hover .team-img-overlay {
+    right: 0;
+    opacity: 1;
+}
+
+.team-content-item .team-img-overlay a {
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 0.3s;
+}
+
+.team-content-item:hover .team-img-overlay a:focus,
+.team-content-item:hover .team-img-overlay a:hover {
+    border: 1px solid var(--hover-color);
+    background: var(--hover-color);
+}
+
+.team-img-details h3 {
+    font-size: 16px;
+    color: #353535;
+    font-weight: 500;
+    margin: 10px 0;
+    transition: all linear 0.3s;
+}
+
+.team-img-details p {
+    font-family: 'oswald', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.team-content-item:hover .team-img-details h3 {
+    color: var(--hover-color);
+}
+
+/* End of Team CSS */
+
+/* Start of Testimonial CSS */
+.testimonial-part {
+    padding-bottom: 60px;
+}
+
+.testimonial-part .testi-img {
+    margin-bottom: 36px;
+}
+
+.testimonial-part .testi-con {
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.testi-con .testi-shape {
+    height: 45px;
+    width: 45px;
+    background: #f1f1f1;
+    transform: translateX(-50%) rotate(45deg);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    z-index: -1;
+}
+
+.testi-text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    margin-bottom: 5px;
+}
+
+.testi-text .review a {
+    color: var(--hover-color);
+}
+
+.testi-text h5 {
+    font-family: 'oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.testi-text p {
+    font-family: 'oswald', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #555555;
+    letter-spacing: 0.8px;
+}
+
+/* End of Testimonial CSS */
+
+/* Start of Footer CSS */
+.f-contact {
+    background: #353535;
+    padding: 32px 0 20px;
+}
+
+.f-copyright {
+    background: #555555;
+    padding: 15px 0;
+    color: #f1f1f1;
+    font-size: 13px;
+}
+
+.f-copyright span {
+    color: var(--hover-color);
+    font-family: 'oswald', sans-serif;
+}
+
+.f-about img {
+    margin-bottom: 17px;
+}
+
+.f-about p {
+    font-size: 13px;
+    color: #f1f1f1;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.flickr h5,
+.important-links h5,
+.contact-details h5 {
+    font-size: 16px;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.contact-email {
+    margin: 20px 0;
+}
+
+.contact-web .globe-icon,
+.contact-email .email-icon,
+.contact-num .phone-icon {
+    font-size: 13px;
+    height: 35px;
+    width: 35px;
+    color: #f1f1f1;
+    background: var(--hover-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-web a,
+.contact-email a,
+.contact-num a {
+    display: block;
+    color: #f1f1f1;
+    font-size: 13px;
+}
+
+.important-links a {
+    color: #f1f1f1;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 15px;
+    transition: all linear 0.3s;
+}
+
+.important-links a:hover {
+    color: var(--hover-color);
+}
+
+/* End of Footer CSS */
+
+.topHeader ul .mrl-0{
+    margin-left: 0px;
+}
+.about-content p{
+    text-align: justify;
+}
+
